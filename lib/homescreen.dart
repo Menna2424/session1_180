@@ -7,6 +7,7 @@ import 'gradient_background.dart';
 import 'circle.dart';
 import 'aalam_masr.dart';
 import 'triangle.dart';
+import 'practice1.dart';
 
 class homescreen extends StatelessWidget {
   const homescreen({super.key});
@@ -94,7 +95,15 @@ class homescreen extends StatelessWidget {
               child: Text("GradientBg"),
             ),
 
-
+            MaterialButton(
+              color: Colors.brown,
+              textColor: Colors.white,
+              onPressed: () {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) => Practice1()));
+              },
+              child: Text("Practice1"),
+            ),
           ],
         ),
       ),
